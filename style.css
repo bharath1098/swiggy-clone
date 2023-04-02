@@ -1,0 +1,272 @@
+*{
+    padding: 0;
+    margin:0;
+    border:0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-container{
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  margin: 0 40px;
+  border-bottom: 2px solid rgba(130,133,143,.2);
+}
+
+.left-nav > img{
+width:80px;
+height: 80px;
+}
+
+.left-nav{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    font-size: 15px;
+    color: #686B78;
+    /* transition:5s; */
+}
+
+.nav-other{
+    color:black; 
+    border-bottom:2px solid;
+}
+
+.nav-left-info{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.nav-left-info:hover strong{
+    color:orange;
+}
+
+.left-nav img{
+    transition: 1.2s;
+}
+.left-nav img:hover{
+transform: scale(1.2);
+}
+
+
+.right-nav{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.right-nav a{
+    display: flex;
+    align-items: center;
+    gap:5px;
+    text-decoration: none;
+    color: #3D4152;
+    
+}
+
+.right-nav>a:hover{
+    color: orange;
+} 
+
+
+/*second nav*/
+
+.second-nav{
+  display:flex;
+  justify-content: space-between;
+  margin: 0 40px;
+  padding: 10px;
+  align-items: center;
+  border-bottom: 2px solid rgba(130,133,143,.1);
+}
+
+.second-nav-left{
+    font-size:23px;
+    width:15%;
+}
+
+.second-nav-right{
+    width: 60%;
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 50px;
+    align-items: center;
+}
+
+.second-nav-right >a {
+    text-decoration: none;
+    color:rgb(130,133,143);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+}
+
+.second-nav-right>a:hover{
+    border-bottom: 1px solid black;
+    
+}
+
+/* main  */
+/* card */
+.card-container{
+    display: flex;
+    border:2x solid red;
+    margin: 20px 60px;
+    flex-wrap: wrap;
+    gap:15px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width:20%;
+    padding:20px;
+    gap:10px
+
+}
+
+.card h2{
+    font-size: 16px;
+}
+
+.card h5{
+    font-size: 12px;
+
+}
+.rating{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+.list{
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    gap:8%;
+    width: 100%;
+    justify-content:flex-start;
+}
+
+.list-item{
+    display: flex;
+    align-items: center;
+}
+
+
+.offer{
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    font-size:13px;
+    color:#A8584B;
+    gap:5px;
+}
+
+.offer >img{
+    width:18px;
+}
+
+.quick-view{
+    display: flex;
+    justify-content: center;
+    font-size: bold;
+    font-weight: 800;
+}
+
+.quick-view > a{
+    text-decoration: none;
+    visibility:hidden;
+}
+
+.card:hover a{
+    visibility: unset;
+}
+.card:hover .quick-view{
+  border-top: 1px solid rgba(130,133,143,.3);
+}
+
+.card:hover{
+    border: 1px solid rgba(130,133,143,.1);
+}
+
+
+/* footer */
+
+.footer-container{
+background-color: black;  
+color: rgb(128,128,128); 
+display: flex;
+flex-direction: column; 
+}
+
+.information{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(130,133,143);
+}
+
+.info-item{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+.info-item > a{
+    text-decoration: none;
+    color: white;
+}
+
+#footer-logo{
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+}
+.info-item >img{
+    padding: 5px;
+    transition: 1.5s;
+}
+
+.info-item>img:hover{
+    transform: scale(1.1);
+}
+
+.info-item>a:hover{
+    transform: scale(1.01);
+}
+
+.Delivery-places{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 40px;
+    gap:15px;
+}
+
+
+.place{
+    display: flex;
+    justify-content: space-between;
+}
+
+.place-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap:20px;
+}
+
+.place-item>a{
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+}
+
+.place-item>a:hover{
+    transform: scale(1.05);
+}
